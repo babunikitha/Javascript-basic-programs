@@ -18,16 +18,48 @@ let reverse="";
 for(let i=string1.length-1;i>=0;i--){
         reverse+=string1[i]
 }
-console.log(reverse)
+console.log(reverse)                                              // software testing o/p is gnitset erawtfos
+
+// let st="Luminar Technoloab"
+// let revst=st.split(" ").reverse().join('')
+// console.log(revst)                                              //luminar technolab o/p isTechnolabLuminar
+
+
 
 //count vowels in a string
-let vowels="aeiouAEIOU"
-let count=0;
-for(let i=0;i<string1.length;i++)
-    if(vowels.includes(string1[i])){
-        count=count+1
+// let vowels="aeiouAEIOU"
+// let count=0;
+// for(let i=0;i<string1.length;i++)
+//     if(vowels.includes(string1[i])){
+//         count=count+1
+//     }
+// console.log(count)
+
+       //or
+
+//count vowels in a string
+// let st="luminar technolab"
+// st.toLocaleLowerCase()
+// let count=0
+// for(let i of st){
+//     if((i=='a') || (i=='e') || (i=='i') || (i=='o') || (i=='u')){
+//         count++
+//     }
+// }
+// console.log(count);   
+                                                            //o/p=6
+//  or
+
+//count vowels in a string
+let st="luminar technolab"
+let vowels="a,e,i,o,u"
+let count=0
+for(let i of st){
+    if(vowels.includes(i)){
+        count++
     }
-console.log(count)
+}
+console.log("no of vowels="+count)
 
 
 //check if string is pallindrome
@@ -49,7 +81,14 @@ console.log(string1.split(" ").length)
 
 
 //find a largest word in a sentance
-
+let w=st.split(" ")
+let large=""
+for(let word of w){
+    if(word.length>large.length){
+        large=word
+    }
+}
+console.log("longest word="+large)                                 //technolab
 
 
 
